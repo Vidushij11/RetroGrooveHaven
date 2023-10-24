@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PP mori;
+}
+.hero-sec{
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #0f0d0d;
+    padding: 0 10rem;
+}
+
+.title-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-below{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.below-para{
+    width: 170px;
+    font-size: 16px;
+    color: rgb(209, 209, 209);
+    text-align: center;
+}
+
+.title{
+    font-size: 6rem;
+    font-weight: 700;
+    color: white;
+}
+.record-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 500px;
+}
+
+.above-t{
+    letter-spacing: 15px;
+    /* font-weight: bolder; */
+}
+
+.body-sec{
+    background-color: #0f0d0d;
+    padding: 0 10rem;
+}
+.blog-img{
+    height: 300px;
+    width: 300px;
+    flex: 1;
+    /* width: 100%; */
+    /* object-fit: cover; */
+    overflow: hidden;
+}
+.blog-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+.blogs{
+    position: relative;
+    margin-top: 5rem;
+    background-color: #d0d0d0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+.blog-data{
+    position: relative;
+    /* border: 1px solid black; */
+    height: 300px;
+    flex: 3;
+    margin: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: start;
+}
+
+.blog-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.blog-date{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(59, 59, 59);
+}
+
+.fab{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 42, 42);
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    padding: auto;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 100%;
+}
+    </style>
+</head>
+<body>
+    <section>
+        <div class="hero-sec">
+            <div class="title-area">
+                <h1 class="title above-t">Retro</h1>
+                <div class="title-below">
+                    <p class="below-para">Embrace the nostalgia of yesteryears, where the past meets the present in a groovy fusion of retro vibes</p>
+                    <h1 class="title">Blogs</h1>
+                </div>
+            </div>
+            <img src="images/record.png" alt="" class="record-img">
+        </div>
+        <div class="body-sec">
+        </div>
+        <div class="fab">+
+        </div>
+        
+    </section>
+    <br><br><br><br><br>
+    <footer class="site-footer">
+        <img src="images/logo.png" alt="" height="50px" width="45px">
+        <div class="foot-one">     
+     <h1>RetroGroove Haven</h1>
+     <p>Step into a world where time rewinds and melodies reign supreme. At RetroGroove Haven, we're passionate about celebrating the timeless magic of retro music that transcends eras. Our virtual space is a haven for all things groovy, where the beats of yesteryears find new life and captivate hearts once more.</p></div>
+     <div class="foot-two">
+        <h2>Category</h2>
+        <h3>Home</h3>
+        <h3>Music Studio</h3>
+        <h3>About Us</h3>
+        <h3>Contact</h3>
+     </div>
+     <!-- <div class="foot-three">
+        <h2>Social</h2>
+        <ul class="social-icons">
+            <li><a class="facebook" href="#"><i style="height: 50px;" class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+     </div> -->
+    </footer>
+    
+    <script src="blogs.js"></script>
+</body>
+</html>

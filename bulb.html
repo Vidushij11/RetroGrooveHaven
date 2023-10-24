@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 40px;
+            padding: 20px;  
+        }
+        .bulb{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 2px solid black;
+            margin: 30px;
+        }
+        button{
+            height: 30px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bulb"></div>
+    <button>ON</button>
+    <Script>
+        var bulb = document.querySelector(".bulb");
+        var btn = document.querySelector("button");
+        var flag = 0;
+        btn.addEventListener("click",function(){
+            if(flag === 0){
+                bulb.style.backgroundColor = "yellow";
+                btn.innerHTML = "OFF";
+                flag = 1;
+            }
+            else{
+                bulb.style.backgroundColor = "transparent";
+                btn.innerHTML = "ON";
+                flag = 0;
+            }
+        })
+    </Script>
+</body>
+</html>
